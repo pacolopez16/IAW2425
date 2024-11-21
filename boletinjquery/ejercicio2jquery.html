@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar y Aparecer</title>
+    <style>
+      
+        .pares {
+            color: blue;
+        }
+    </style>
+    <script>
+        
+        function encabezado() {
+            var encabezado = document.getElementById("encabezado");
+            if (encabezado.style.display === "none") {
+                encabezado.style.display = "block";
+            } else {
+                encabezado.style.display = "none";
+            }
+        }
+
+        
+        function pares() {
+            var parrafosPares = document.querySelectorAll(".pares");
+            parrafosPares.forEach(function(parrafo) {
+                if (parrafo.style.display === "none") {
+                    parrafo.style.display = "block";
+                } else {
+                    parrafo.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+
+   
+    <h1 id="encabezado">Ejercicio 2</h1>
+
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quidem doloremque exercitationem consequatur quis rerum nam ipsa libero, culpa atque laborum magnam beatae corporis. Corrupti unde tenetur cumque nobis repellat.</p>
+    <p class="pares">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam consequatur perspiciatis natus ipsum commodi alias enim repudiandae, reprehenderit aliquid quo dicta reiciendis sequi voluptatem dolorum neque, placeat veritatis consequuntur fugiat..</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad labore, cumque, eligendi, quas qui itaque porro ipsa libero saepe minus asperiores culpa adipisci soluta voluptatum nesciunt! Voluptas expedita minus rerum..</p>
+    <p class="pares">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quae! Sit saepe numquam non maxime excepturi. Deleniti quas id atque placeat at aliquam incidunt reiciendis quasi dolores non, quod nostrum..</p>
+
+  
+    <button onclick="encabezado()">Ocultar/Aparecer Encabezado</button>
+    <button onclick="pares()">Ocultar/Aparecer Párrafos Pares</button>
+
+</body>
+</html>
+

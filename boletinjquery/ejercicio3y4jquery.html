@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Tamaño y Color</title>
+    <style>
+      
+        #encabezado {
+            font-size: 24px;
+            color: black;
+        }
+        .pares {
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+    <script>
+ 
+        function aumentarTamañoYColor() {
+         
+            document.getElementById("encabezado").style.fontSize = "28px";
+            document.getElementById("encabezado").style.color = "blue";
+
+          
+            var parrafosPares = document.querySelectorAll(".pares");
+            parrafosPares.forEach(function(parrafo) {
+                parrafo.style.fontSize = "22px";
+                parrafo.style.color = "red";
+            });
+        }
+
+        
+        function disminuirTamañoYColor() {
+           
+            document.getElementById("encabezado").style.fontSize = "20px";
+            document.getElementById("encabezado").style.color = "black";
+
+            
+            var parrafosPares = document.querySelectorAll(".pares");
+            parrafosPares.forEach(function(parrafo) {
+                parrafo.style.fontSize = "16px";
+                parrafo.style.color = "green";
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <h1 id="encabezado">Ejercicio 3 y 4</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate vitae nobis alias consequatur et voluptatem harum nihil corrupti quia iusto nam suscipit, similique possimus dolorum veritatis perferendis dolores quod.</p>
+    <p class="pares">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minima hic libero cupiditate nam doloribus odit quisquam ad! Sapiente eum rem recusandae labore molestiae possimus natus eligendi quidem tempore modi?.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut non natus quisquam ut labore enim rerum nobis, voluptatum architecto quae iste soluta asperiores delectus quibusdam, dolore, aperiam ad id..</p>
+    <p class="pares">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem id cupiditate vel ex iure maxime? Et aliquam unde, quaerat voluptas, magnam eaque, commodi reprehenderit tempore eveniet deleniti quia neque qui!.</p>
+
+   
+    <button onclick="aumentarTamañoYColor()">Más grande</button>
+    <button onclick="disminuirTamañoYColor()">Menos grande</button>
+
+</body>
+</html>

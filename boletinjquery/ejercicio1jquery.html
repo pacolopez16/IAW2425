@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+
+    </style>
+    <script>
+
+        function ocultar() {
+            document.getElementById("encabezado").style.display = "none";
+            const elementos = document.querySelectorAll(".parrafo");
+            elementos.forEach(element => element.style.display = "none");
+        }
+
+
+        function aparecer() {
+            document.getElementById("encabezado").style.display = "block";
+            const elementos = document.querySelectorAll(".parrafo");
+            elementos.forEach(element => element.style.display = "block");
+        }
+    </script>
+</head>
+<body>
+    <h1 id="encabezado">Ejercicio 1</h1>
+
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor consectetur provident! Laboriosam, magnam qui. Ipsam eos velit beatae quod! Asperiores amet minima adipisci repellat rerum maiores recusandae! Fugiat, optio..</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil qui repellat minima fugiat maiores eius tenetur recusandae! Cum reiciendis nam, corporis veniam fugit quo nemo eaque necessitatibus perferendis! Sed, animi!.</p>
+    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero modi adipisci, ab at odio doloribus eius voluptatum. Iste earum laboriosam aspernatur dolorum nisi neque, ullam molestiae, facilis assumenda porro iure!.</p>
+
+    <button onclick="ocultar()">Ocultar</button>
+    <button onclick="aparecer()">Aparecer</button>
+</body>
+</html>
