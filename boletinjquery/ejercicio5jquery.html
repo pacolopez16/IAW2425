@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        
+        .cuadro {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: none; 
+        }
+        #rojo {
+            background-color: red;
+        }
+        #verde {
+            background-color: green;
+        }
+
+        
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+         
+            $("#muestra").click(function() {
+                $(".cuadro").fadeIn(1000);  
+            });
+
+            
+            $("#oculta").click(function() {
+                $(".cuadro").fadeOut(1000); 
+            });
+
+            
+            $("#fadetoogle").click(function() {
+                $(".cuadro").fadeToggle(1000); 
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Ejercicio 5</h1>
+
+   
+    <button id="muestra">Mostrar con fadeIn</button>
+    <button id="oculta">Ocultar con fadeOut</button>
+    <button id="fadetoggle">Alternar con fadeToggle</button>
+
+    
+    <div id="rojo" class="cuadro"></div>
+    <div id="verde" class="cuadro"></div>
+
+</body>
+</html>
